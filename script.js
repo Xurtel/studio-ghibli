@@ -1,10 +1,14 @@
-// Accessing our index.html's root div
-const app = document.getElementById("root");
 
+function myFunction(){
+	// Accessing our index.html's root div
+const app = document.getElementById("root");
+console.log(app);
 // Creating image element of website
 const logo = document.createElement("img");
+console.log(logo);
 // Set the src attribute to logo.png (because an empty img is no good)
 logo.src = "logo.png";
+//console.log(logo);
 
 const container = document.createElement("div");
 container.setAttribute("class", "container");
@@ -59,6 +63,8 @@ request.onload = function(){
 }
 
 request.send();
+}
+
 
 /*
  *	Now put this stuff (below) to the very top
